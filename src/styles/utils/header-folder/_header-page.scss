@@ -1,0 +1,39 @@
+.header-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 18px 16px 8.34px;
+
+  &__asap,
+  &__adress,
+  &__verification {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    cursor: pointer;
+  }
+
+  &__adress-mobile {
+    display: none;
+  }
+
+  &__block-img--relative {
+    position: relative;
+  }
+}
+
+.icon-location {
+  position: absolute;
+  top: 11px;
+  left: 12px;
+}
+
+.basket-img {
+  transition: transform 1s inherit;
+}
+
+.basket-img:hover {
+  transform: scale(1.1);
+}

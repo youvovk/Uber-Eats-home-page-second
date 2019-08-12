@@ -1,0 +1,105 @@
+.logo--black-back {
+  background: #262626;
+}
+
+.footer-block {
+
+  &__logo,
+  &__contact,
+  &__download-app {
+    position: relative;
+  }
+
+  &__logo {
+    cursor: pointer;
+    padding-bottom: 40px;
+  }
+
+  &__contact-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 32px 0 48px;
+  }
+
+  &__select {
+    width: 227px;
+    height: 40px;
+    cursor: pointer;
+    appearance: none;
+    background: url(./../images/arrow-select.png) no-repeat 10px right;
+    border: none;
+    outline: none;
+    background-color: #3b3b3b;
+    border-radius: 2px;
+    margin-bottom: 33px;
+    padding-left: 48px;
+  }
+
+  &__img--relative {
+    position: relative;
+  }
+
+  &__img--absolute {
+    position: absolute;
+    top: 2px;
+    left: 16px;
+  }
+
+  &__hashtag {
+    font-size: 16px;
+    margin-bottom: 21px;
+    cursor: pointer;
+    transition: transform 0.5s linear;
+  }
+
+  &__hashtag:hover {
+    transform: translateX(3px);
+  }
+
+  &__network-img {
+    margin-right: 5px;
+    transition: transform 1s inherit;
+  }
+
+  &__network-img:hover {
+    transform: scale(1.2);
+    background-color: darken(#59bd5a, 5%);
+  }
+
+  &__info {
+    cursor: pointer;
+    font-size: 13px;
+  }
+
+  &__info--grid {
+    display: grid;
+    grid-row-gap: 23px;
+  }
+
+  &__download-app-item {
+    cursor: pointer;
+  }
+
+  &__download-app--flex {
+    display: flex;
+    justify-content: center;
+    padding: 42px 0 40px;
+  }
+
+  &__download-app--flex :first-child {
+    margin-right: 41px;
+  }
+
+  &__privacy {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    cursor: pointer;
+    font-size: 11px;
+    padding: 40px 0;
+  }
+}
+
+.outline-option--none {
+  outline: none;
+  border: none;
+}

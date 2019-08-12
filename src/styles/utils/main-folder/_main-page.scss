@@ -1,0 +1,17 @@
+.main-block {
+  margin: 40px 6.56px;
+
+  &__img {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+  }
+}
+
+.search-items {
+  margin-bottom: 24px;
+
+  &--relative {
+    position: relative;
+  }
+}
