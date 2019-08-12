@@ -1,5 +1,5 @@
 .drop-down-list {
-  width: 292px;
+  width: 100%;
   height: 40px;
   margin-right: 46px;
   padding-left: 36px;
@@ -8,7 +8,7 @@
   &--border-none {
     border: none;
     padding-left: 30px;
-    margin-bottom: 8px;
+    margin-top: 4px;
     outline: none;
     opacity: 0.5;
   }
