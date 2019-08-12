@@ -143,8 +143,7 @@
   margin: 40px 6.56px; }
   .main-block__img {
     position: absolute;
-    top: 10px;
-    left: 5px; }
+    top: 14px; }
 
 .search-items {
   margin-bottom: 24px; }
@@ -161,8 +160,8 @@
     cursor: pointer;
     position: relative;
     background-color: #7dcc7e;
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
     z-index: 1; }
   .card__section-shop {
     font-size: 16px;
@@ -440,7 +439,7 @@
   transition: 0.5s; }
 
 .drop-down-list {
-  width: 292px;
+  width: 100%;
   height: 40px;
   margin-right: 46px;
   padding-left: 36px;
@@ -448,7 +447,7 @@
   .drop-down-list--border-none {
     border: none;
     padding-left: 30px;
-    margin-bottom: 8px;
+    margin-top: 4px;
     outline: none;
     opacity: 0.5; }
 
