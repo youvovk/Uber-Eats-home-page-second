@@ -1,0 +1,19 @@
+.text {
+  margin: 0 9px;
+
+  &--gray {
+    color: #626262;
+  }
+
+  &--white {
+    color: #fff;
+  }
+
+  &--green {
+    color: #49a144;
+  }
+
+  &--margin {
+    margin-bottom: 23px;
+  }
+}

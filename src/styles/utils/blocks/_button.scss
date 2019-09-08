@@ -1,0 +1,60 @@
+.button {
+  font-size: 13px;
+  cursor: pointer;
+
+  &--white {
+    background: #fff;
+    margin: 0 16px 0 46px;
+    color: #1d1d1d;
+    transition: border 400ms;
+  }
+
+  &--white:hover {
+    border: #000 solid 1px;
+  }
+
+  &--black {
+    background: #262626;
+    color: #fff;
+    margin-right: 27px;
+    transition: border 400ms;
+  }
+
+  &--black:hover {
+    background: #fff;
+    border: #000 solid 1px;
+    color: #000;
+  }
+
+  &__asap {
+    width: 65px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  &__verification {
+    width: 80px;
+    height: 40px;
+    font-weight: 500;
+  }
+}
+
+.button-up {
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  bottom: 20px;
+  right: 16px;
+  z-index: 99;
+  font-size: 18px;
+  background-color: #59bd5a;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+
+  &:hover {
+    background: darken(#59bd5a, 10%);
+  }
+}
