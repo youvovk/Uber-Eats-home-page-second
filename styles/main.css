@@ -29,10 +29,10 @@
   left: 12px; }
 
 .basket-img {
-  -webkit-transition: -webkit-transform 1s inherit;
-  transition: -webkit-transform 1s inherit;
-  transition: transform 1s inherit;
-  transition: transform 1s inherit, -webkit-transform 1s inherit; }
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s; }
 
 .basket-img:hover {
   -webkit-transform: scale(1.1);
@@ -44,16 +44,20 @@
   .button--white {
     background: #fff;
     margin: 0 16px 0 46px;
-    color: #1d1d1d; }
+    color: #1d1d1d;
+    -webkit-transition: border 400ms;
+    transition: border 400ms; }
   .button--white:hover {
-    border: #000 solid 2px; }
+    border: #000 solid 1px; }
   .button--black {
     background: #262626;
     color: #fff;
-    margin-right: 27px; }
+    margin-right: 27px;
+    -webkit-transition: border 400ms;
+    transition: border 400ms; }
   .button--black:hover {
     background: #fff;
-    border: #000 solid 2px;
+    border: #000 solid 1px;
     color: #000; }
   .button__asap {
     width: 65px;
@@ -164,13 +168,16 @@
             transform: translateY(-20px);
     z-index: 1; }
   .card__section-shop {
+    padding-left: 10px;
     font-size: 16px;
     color: #1d1d1d;
     margin-top: 20px; }
   .card__section-meal {
+    padding-left: 10px;
     font-size: 14px;
     margin-top: 10px; }
   .card__delivery {
+    padding-left: 10px;
     font-size: 13px;
     color: #1d1d1d;
     margin-top: 10px; }
@@ -228,10 +235,10 @@
   font-size: 16px;
   margin-bottom: 21px;
   cursor: pointer;
-  -webkit-transition: -webkit-transform 0.5s linear;
-  transition: -webkit-transform 0.5s linear;
-  transition: transform 0.5s linear;
-  transition: transform 0.5s linear, -webkit-transform 0.5s linear; }
+  -webkit-transition: -webkit-transform 0.1s linear;
+  transition: -webkit-transform 0.1s linear;
+  transition: transform 0.1s linear;
+  transition: transform 0.1s linear, -webkit-transform 0.1s linear; }
 
 .footer-block__hashtag:hover {
   -webkit-transform: translateX(3px);
@@ -360,14 +367,19 @@
 
 .box__border-hover {
   position: relative;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
-  border: 2px solid rgba(0, 160, 80, 0); }
+  border: 1px solid rgba(0, 160, 80, 0);
+  -webkit-transition: border 0.6s linear;
+  transition: border 0.6s linear; }
 
 .box__border-hover:hover {
-  border: 2px solid #0b7;
-  text-align: center; }
+  border-bottom: 1px solid #0b7; }
 
 .box__border-hover::before,
 .box__border-hover::after {
@@ -396,10 +408,12 @@
   -webkit-transition: 0.5s;
   transition: 0.5s;
   cursor: pointer;
-  border: 2px solid rgba(0, 160, 80, 0); }
+  border: 1px solid rgba(0, 160, 80, 0); }
 
-.box:hover {
-  border: 2px solid #0b7; }
+.box:hover,
+.box:active,
+.box:focus {
+  border-bottom: 1px solid #0b7; }
 
 .box::before {
   z-index: 3;
